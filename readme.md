@@ -35,10 +35,11 @@ query {
   }
 }
 ```
-
+```shell
 curl -X POST -H "Content-Type: application/json" -d '{"query": "{ project(input: { id: \"PROJECT_ID_HERE\" }) { _id ownerId name description status } }"}' http://localhost:8080/
 
 
 curl -X POST -H "Content-Type: application/json" -d '{ 
   "query": "mutation { createOwner(input: { name: \"avijit\", email: \"avijit@gamif.vo\", phone: \"8250325238\" }) { _id name email phone } }"
 }' https://codename-user.onrender.com/
+```
