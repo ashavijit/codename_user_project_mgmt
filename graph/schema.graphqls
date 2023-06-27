@@ -1,0 +1,53 @@
+type Owner {
+  _id: String!
+  name: String!
+  email: String!
+  phone: String!
+}
+
+type Project {
+  _id: String!
+  ownerId: ID!
+  name: String!
+  description: String!
+  status: Status!
+}
+
+enum Status {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+input FetchOwnerInput {
+  id: String!
+}
+
+input FetchProject {
+  id: String!
+}
+
+input NewOwner {
+  name: String!
+  email: String!
+  phone: String!
+}
+
+input NewProject {
+  ownerId: ID!
+  name: String!
+  description: String!
+  status: Status!
+}
+
+type Query {
+  owners: [Owner!]!
+  projects: [Project!]!
+  owner(input: FetchOwnerInput): Owner!
+  project(input: FetchProject): Project!
+}
+
+type Mutation {
+  createOwner(input: NewOwner): Owner!
+  createProject(input: NewProject): Project!
+}
+
