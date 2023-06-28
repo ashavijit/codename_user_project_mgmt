@@ -4,13 +4,15 @@
   "description": "CreatOwner ```graphql mutation{   createOwner(input:     { name: \"avijit\" , email: \"avijit@gamif.vo\", phone : \"8250325238\"}){     _id     name     email     phone   } } ``` createProject",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "graphql-request": "^6.1.0"
+    "graphql-request": "^6.1.0",
+    "nodemon": "^2.0.22"
   }
 }
