@@ -1,0 +1,16 @@
+{
+  "name": "project-management",
+  "version": "1.0.0",
+  "description": "CreatOwner ```graphql mutation{   createOwner(input:     { name: \"avijit\" , email: \"avijit@gamif.vo\", phone : \"8250325238\"}){     _id     name     email     phone   } } ``` createProject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "graphql-request": "^6.1.0"
+  }
+}
